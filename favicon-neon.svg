@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="neonPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="neonPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <linearGradient id="neonGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <linearGradient id="neonBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="neonAura" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark Rounded Tile Background -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#0f172a" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+
+  <!-- Glowing Wheel Ring -->
+  <g filter="url(#neonAura)" stroke-width="4.5" stroke-linecap="round" fill="none">
+    <!-- Top-Right Arc: Pink -->
+    <path d="M 32 10 A 22 22 0 0 1 54 32" stroke="url(#neonPink)"/>
+    <!-- Bottom-Right Arc: Gold -->
+    <path d="M 54 32 A 22 22 0 0 1 32 54" stroke="url(#neonGold)"/>
+    <!-- Bottom-Left Arc: Blue -->
+    <path d="M 32 54 A 22 22 0 0 1 10 32" stroke="url(#neonBlue)"/>
+    <!-- Top-Left Arc: Purple -->
+    <path d="M 10 32 A 22 22 0 0 1 32 10" stroke="url(#neonPurple)"/>
+  </g>
+
+  <!-- Center Hub -->
+  <circle cx="32" cy="32" r="7" fill="#1e293b" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="3.5" fill="#fde047"/>
+
+  <!-- Top Pointer Arrow (12 o'clock) -->
+  <polygon points="26,4 38,4 32,15" fill="#f43f5e" stroke="#ffffff" stroke-width="1.2" stroke-linejoin="round"/>
+  <circle cx="32" cy="6" r="1.8" fill="#ffffff"/>
+</svg>
