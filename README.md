@@ -64,5 +64,5 @@ The wheel never resets position after spinning, continuing forward naturally on 
 
 ---
 
-## 🚀 How to Run
--- visit 
+## 🚀 How to Use
+-- visit https://lucky-spin-ebon.vercel.app
