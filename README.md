@@ -65,18 +65,4 @@ The wheel never resets position after spinning, continuing forward naturally on 
 ---
 
 ## 🚀 How to Run
-
-### Method 1: Instant Browser Launch (Zero Dependencies)
-Simply double click [index.html](file:///C:/Users/vijay/.gemini/antigravity/scratch/lucky-spin/index.html) or run with any local server:
-```powershell
-cd C:\Users\vijay\.gemini\antigravity\scratch\lucky-spin
-python -m http.server 8000
-```
-Then visit `http://localhost:8000` on your desktop, laptop, or mobile on the same local network!
-
-### Method 2: Java Spring Boot Backend (Optional)
-```powershell
-cd C:\Users\vijay\.gemini\antigravity\scratch\lucky-spin
-mvn spring-boot:run
-```
-Then visit `http://localhost:8080`.
+-- visit 
